@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TID-TID</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="boxtabbar">
+        <div class="tabbar">
+            <div class="area-left">
+                <a href="#" class="Nav trigger_user" onclick="">
+                    <svg width="36" height="36" viewBox="0 0 24 24" focusable="false" class="iconbar">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div style="display: contents;">
+                <img src="./image/LOGO.png" width="120px">
+            </div>
+            <div class="area-right ">
+                <a href="#" class="Nav trigger_popup">
+                    <svg width="36" height="36" viewBox="0 0 24 24" focusable="false" class="iconbar">
+                        <path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="boxcourse">
+        <div class="areacourse">
+            <div class="course-up">
+                <p class="textcourse">Course</p>
+                <p id="demo"></p>
+                <div>
+                    <label for="yeartype" style="font-size: 1.25em;">Year</label><br>
+                    <select id="year" onchange="getSelectYear()">
+                        <option value="hide">-- Year --</option>
+                        <option value="2560">2560</option>
+                        <option value="2561">2561</option>
+                        <option value="2562">2562</option>
+                        <option value="2563">2563</option>
+                        <option value="2564">2564</option>
+                        <option value="2565">2565</option>
+                        <option value="2566">2566</option>
+                    </select>
+                </div>
+
+            </div>
+            <section class="container">
+
+
+                <ul class="maincourse" id="classCard">
+
+                    <li id="Course" class="object_course">
+                        <div class="setcourse" onclick="location.href='./Course/course.html';" style="cursor: pointer;">
+                            <div class="course-top">
+                                <div id="subjectid">Subject ID</div>
+                            </div>
+                            <div class="course-middle">
+                                <div id="subjectname">Subject
+                                        NameSubject NameSubject NameSubject Name</div>
+                            </div>
+                            <div class="course-down">
+                                FRI 09:00-13:00
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+
+    <!-- addsubject -->
+    <div class="hover_popup">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton">&times;</div>
+            <div class="boxaddsub">
+                <div class="textaddsub">Add Subject</div>
+                <div class="setsubject">
+                    <div>
+                        <label for="">Subject ID</label>
+                        <input type="text" class="form-control" id="classID" placeholder="Subject ID" />
+                    </div>
+
+                    <div>
+                        <label for="">Subject Name</label>
+                        <input type="text" class="form-control" id="className" placeholder="Subject Name" />
+                    </div>
+
+                    <div class="balancebox">
+                        <div>
+                            <label for="">Year</label><br>
+                            <select id="studyYear">
+                                <option value="hide">-- Year --</option>
+                                <option value="2560">2560</option>
+                                <option value="2561">2561</option>
+                                <option value="2562">2562</option>
+                                <option value="2563">2563</option>
+                                <option value="2564">2564</option>
+                                <option value="2565">2565</option>
+                                <option value="2566">2566</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="">Semester</label><br>
+                            <input type="text" class="form-control" id="semester" placeholder="Semester" />
+                        </div>
+                    </div>
+
+                    <div class="balancebox">
+                        <div>
+                            <label for="">Study day</label><br>
+                            <select id="studyDay">
+                                <option value=" hide">-- Select day --</option>
+                                <option value="Sun">Sunday</option>
+                                <option value="Mon">Monday</option>
+                                <option value="Tue">Tuesday</option>
+                                <option value="Wed">Wednesday</option>
+                                <option value="Thu">Thursday</option>
+                                <option value="Fri ">Friday</option>
+                                <option value="Sat">Saturday</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="">Section</label><br>
+                            <input type="text" class="form-control" id="section" placeholder="Section" />
+                        </div>
+                    </div>
+
+                    <div class="balancebox">
+                            <div>
+                                <label for="appt">Start Time</label>
+                                <input type="time" id="startTime" name="appt">
+                            </div>
+
+                            <div>
+
+                                <label for="appt">End Time</label>
+                                <input type="time" id="endTime" name="appt">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="Description" />
+                        </div>
+
+                        <div class="boxbutton">
+                            <button type="submit" class="button" onclick="addClass()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- user login -->
+        <div class="hover_user">
+            <span class="helper"></span>
+            <div>
+                <div class="boxuser_top">
+                    <div class="humbergerCloseButton">
+                        <a href="#" class=" trigger_user">
+                            ☰
+                        </a>
+                    </div>
+                    <div class="userlogin">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/user-male-circle.png" /
+                            style="background-color: white; border-radius: 2em;">
+                        <div class="datauser">
+                            <div class="nameuser" id="userinfo">Nametitle. Firstname Lastname</div>
+                        </div>
+
+                        <div class="email" id="useremail">Email</div>
+                    </div>
+                    <!-- <div class="login">
+                        <a href="../tidtid/60070114/Sign/Sign.html" style="color: brown; font-size: 2.5vh;">
+                            Login
+                        </a>
+                    </div> -->
+
+                </div>
+
+                <div class="boxuser_down">
+                    <div class="boxlogout" style="color: white;">
+                        <a class="outbtn" id="logoutbtn" onclick="logout()" href="Sign/Sign.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyCVFC_8y6stZuAZE6QAFngMq06V13jr3ho",
+        authDomain: "attentionlogin-a8f4e.firebaseapp.com",
+        databaseURL: "https://attentionlogin-a8f4e.firebaseio.com",
+        projectId: "attentionlogin-a8f4e",
+        storageBucket: "attentionlogin-a8f4e.appspot.com",
+        messagingSenderId: "632031478287",
+        appId: "1:632031478287:web:76ef60c713399f36b0597a"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const firestore = firebase.firestore()
+    const settings = {
+        /* your settings... */
+        timestampsInSnapshots: true
+    };
+    firestore.settings(settings);
+</script>
+
+
+<script>
+    var testDivs = document.querySelectorAll('#Course');
+    var testColors = ["#0041C2", "#2554C7", "#1569C7", "#2B60DE", "#1F45FC", "#6960EC", "#736AFF", "#357EC7", "#368BC1",
+        "#488AC7", "#3090C7", "#659EC7", "#87AFC7", "#95B9C7", "#728FCE", "#2B65EC", "#306EFF", "#157DEC",
+        "#1589FF", "#6495ED", "#6698FF", "#38ACEC", "#56A5EC", "#5CB3FF", "#3BB9FF", "#79BAEC", "#82CAFA", "#82CAFF"
+    ];
+
+    for (let i = 0; i < testDivs.length; i++) {
+        testDivs[i].style.backgroundColor = testColors[i];
+    }
+</script>
+<script src="script.js"></script>
+
+</html>

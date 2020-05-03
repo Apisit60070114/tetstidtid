@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TID-TID</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sign.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="boxtabbar">
+        <div class="tabbar">
+            <div class="area-left">
+                <a href="../index.html" class="boxback">
+                     <a href="../index.html" class="boxback"> 
+                    <i class="large material-icons" style=" color: black; margin-top: 20px; font-size: 3em; ">arrow_back</i>
+                </a>
+
+            </div>
+            <div style="display: contents;">
+                <img src="../image/LOGO.png" width="120px" style="margin-left: -3vh;">
+            </div>
+            <div class="area-right">
+
+            </div>
+        </div>
+        <div class="linkbar">
+            <div class="linkleft" onclick="mockupClick('signin','signup','divcolor2','divcolor1')"><a href="#">SIGN UP</a>
+                <div class="divcolor1">
+                    <div class="boxcolor1">
+                        <div class="colorbule1" style="background-color:#665EFF; height: 10px; width: 25%;"></div>
+                        <div class="colorbule2" style="background-color:#5773FF; height: 10px; width: 25%;"></div>
+                        <div class="colorbule3" style="background-color:#3497FD; height: 10px; width: 25%;"></div>
+                        <div class="colorbule4" style="background-color:#3ACCE1; height: 10px; width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="linkright" onclick="mockupClick('signup','signin','divcolor1','divcolor2')"><a href="#">SIGN IN</a>
+                <div class="divcolor2" style="display: none;">
+                    <div class="boxcolor2">
+                        <div class="colorbule1" style="background-color:#665EFF; height: 10px; width: 25%;"></div>
+                        <div class="colorbule2" style="background-color:#5773FF; height: 10px; width: 25%;"></div>
+                        <div class="colorbule3" style="background-color:#3497FD; height: 10px; width: 25%;"></div>
+                        <div class="colorbule4" style="background-color:#3ACCE1; height: 10px; width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="flat-form">
+
+        <div id="signup" class="form-action show">
+
+
+            <input type="text" class="form-control" id="titlename" placeholder="Name Title" />
+
+
+            <input type="text" class="form-control" id="firstname" placeholder="First Name" />
+
+
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name" />
+
+
+            <input type="text" class="form-control" id="email" placeholder="Email" />
+
+
+            <input type="password" class="form-control" id="password" placeholder="Password" />
+
+
+            <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" />
+
+
+            <button type="submit" class="button" onclick="signUp()">Sign up</button>
+
+            </ul>
+            </form>
+        </div>
+        <!--/#login.form-action-->
+        <div id="signin" class="form-action hide">
+
+            <input type="text" placeholder="Email" id="email_field"/>
+
+            <input type="password" placeholder="Password" id="password_field"/>
+
+            <button type="submit" class="button" onclick="login()">Sign in</button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script>
+
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCVFC_8y6stZuAZE6QAFngMq06V13jr3ho",
+            authDomain: "attentionlogin-a8f4e.firebaseapp.com",
+            databaseURL: "https://attentionlogin-a8f4e.firebaseio.com",
+            projectId: "attentionlogin-a8f4e",
+            storageBucket: "attentionlogin-a8f4e.appspot.com",
+            messagingSenderId: "632031478287",
+            appId: "1:632031478287:web:76ef60c713399f36b0597a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</body>
+<script src="script.js"></script>
+
+</html>

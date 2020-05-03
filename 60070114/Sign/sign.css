@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+body{
+  background-color: #F7F7FA;
+  font-family: 'Kanit', sans-serif;
+}
+#signin
+{
+  display:none;
+}
+/*  */
+
+
+/*------- open nav bar -------*/
+.boxtabbar{
+  background: white;
+  border-bottom: .0625rem solid #e0e0e0;
+  flex-shrink: 0;
+  line-height: 3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+    
+}
+
+.tabbar{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight:bold;
+  line-height: 3em;
+}
+.area-left{
+  margin-left: 3vh;
+}
+.area-right{
+  margin-right: 3vh;
+}
+
+.boxcolor1{
+  display: flex;
+  height: 10px;
+  
+}
+.boxcolor2{
+  display: flex;
+  height: 10px;
+}
+
+.linkbar{
+  display: flex;
+  width: 100%;
+  line-height: 2.5em;
+}
+a{
+  text-decoration: none;
+  font-weight:bold;
+  font-size: 0.6em;
+  color: #454F63;
+}
+.linkleft{
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  border:  1px solid lightgrey ;
+
+}
+
+.linkright{
+  width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  border:  1px solid lightgrey ;
+}
+/* open from */
+.flat-form{
+  margin: auto;
+  margin-top: 150px;
+  width: 90%;
+  
+}
+button{
+  background:rgb(7, 134, 212);
+  border-radius:.6em;
+  font-size: 1.2em;
+  color:white;
+  width:100%;
+  padding:1em;
+  margin: auto;
+  margin-top: 4%;
+  box-sizing:border-box;
+  border:none;
+  font-size: 1.2em;
+  font-family: 'Kanit', sans-serif;
+}
+
+a.signinbtn{
+  border-radius:.6em;
+  color:white;
+  width:100%;
+  padding:1em;
+  margin: auto;
+  margin-top: 4%;
+  box-sizing:border-box;
+  border:none;
+  font-size: 1em;
+  font-family: 'Kanit', sans-serif;
+}
+input, select {
+  width:100%;
+  height: 50px;
+  border-radius:.6em;
+  padding:.5em .5em;
+  background-color: rgb(255, 255, 255);
+  box-sizing:border-box;
+  border:.5px solid #ccc;
+  margin-bottom:1em;
+  margin-top: 2.5%;
+  font-weight:bold;
+  font-size: 1em;
+  color: #454F63;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: 'Kanit', sans-serif;
+}
+/* close from */

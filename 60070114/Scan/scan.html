@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TID-TID</title>
+  <link rel="stylesheet" href="scan.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <nav class="boxtabbar">
+    <div class="tabbar">
+      <div class="area-left">
+        <a href="../index.html" class="boxback"><img
+            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0OTIgNDkyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTIgNDkyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNDY0LjM0NCwyMDcuNDE4bDAuNzY4LDAuMTY4SDEzNS44ODhsMTAzLjQ5Ni0xMDMuNzI0YzUuMDY4LTUuMDY0LDcuODQ4LTExLjkyNCw3Ljg0OC0xOS4xMjQgICAgYzAtNy4yLTIuNzgtMTQuMDEyLTcuODQ4LTE5LjA4OEwyMjMuMjgsNDkuNTM4Yy01LjA2NC01LjA2NC0xMS44MTItNy44NjQtMTkuMDA4LTcuODY0Yy03LjIsMC0xMy45NTIsMi43OC0xOS4wMTYsNy44NDQgICAgTDcuODQ0LDIyNi45MTRDMi43NiwyMzEuOTk4LTAuMDIsMjM4Ljc3LDAsMjQ1Ljk3NGMtMC4wMiw3LjI0NCwyLjc2LDE0LjAyLDcuODQ0LDE5LjA5NmwxNzcuNDEyLDE3Ny40MTIgICAgYzUuMDY0LDUuMDYsMTEuODEyLDcuODQ0LDE5LjAxNiw3Ljg0NGM3LjE5NiwwLDEzLjk0NC0yLjc4OCwxOS4wMDgtNy44NDRsMTYuMTA0LTE2LjExMmM1LjA2OC01LjA1Niw3Ljg0OC0xMS44MDgsNy44NDgtMTkuMDA4ICAgIGMwLTcuMTk2LTIuNzgtMTMuNTkyLTcuODQ4LTE4LjY1MkwxMzQuNzIsMjg0LjQwNmgzMjkuOTkyYzE0LjgyOCwwLDI3LjI4OC0xMi43OCwyNy4yODgtMjcuNnYtMjIuNzg4ICAgIEM0OTIsMjE5LjE5OCw0NzkuMTcyLDIwNy40MTgsNDY0LjM0NCwyMDcuNDE4eiIgZmlsbD0iIzAwMDAwMCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo="
+            width="20px" /></a>
+
+      </div>
+      <div>
+        SCAN BARCODE
+      </div>
+      <div class="area-right">
+
+      </div>
+    </div>
+    <div class="boxsubject">
+      <div class="textsubject">
+        <div class="Subject">Web Design and Development</div>
+        <div class="idsubject">06016346</div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section id="container" class="container">
+
+    <!-- หน้าจอแสดงผลของกล้อง -->
+    <!-- ใช้ id="camera" class="viewport" เท่านั้น ห้ามใช้ชื่ออื่น!-->
+    <div id="camera" class="viewport"></div>
+    <!--  -->
+
+  </section>
+
+  <footer class="checkdata">
+    <div class="checkstudentid" id="studentid">StudentID</div>
+
+    <div class="checktime">
+      <div id="status">
+        <input type="radio" name="status" class="css_data_item" value="onTime"> On Time
+        <input type="radio" name="status" class="css_data_item" value="late"> Late
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script src="./quagga.js" type="text/javascript"></script>
+<script src="./scanner.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVFC_8y6stZuAZE6QAFngMq06V13jr3ho",
+    authDomain: "attentionlogin-a8f4e.firebaseapp.com",
+    databaseURL: "https://attentionlogin-a8f4e.firebaseio.com",
+    projectId: "attentionlogin-a8f4e",
+    storageBucket: "attentionlogin-a8f4e.appspot.com",
+    messagingSenderId: "632031478287",
+    appId: "1:632031478287:web:76ef60c713399f36b0597a"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const firestore = firebase.firestore()
+  const settings = {
+    /* your settings... */
+    timestampsInSnapshots: true
+  };
+  firestore.settings(settings);
+
+  let user = {}
+
+  firebase.auth().onAuthStateChanged(function (currentUser) {
+    if (currentUser) {
+      // User is signed in.
+      user = currentUser
+    } else {
+      // No user is signed in.
+      alert('Please Sign In')
+    }
+  });
+</script>
+
+<script>
+  let scanner = new Scanner('#camera')
+
+  scanner.init()
+  scanner.onDetected(function () {
+    let sid = scanner.getCode()
+    let timeStamp = new Date()
+    document.getElementById("studentid").innerHTML = sid;
+
+    setStudentStatus('cid', user.uid, sid, getStatus(), timeStamp)
+  })
+
+  function setStudentStatus(cid, uid, sid, status, timeStamp) {
+    let aid = null
+    let date = timeStamp.toDateString()
+
+    firestore.collection('attendance').where('cid', '==', cid).where('date', '==', date).get().then(function (
+      querySnapshot) {
+      querySnapshot.forEach(function (doc) {
+        aid = doc.id
+      });
+
+      if (aid) {
+        firestore
+          .collection('attendance')
+          .doc(aid)
+          .collection('Students')
+          .doc(sid)
+          .set({
+            status: status,
+            timeStamp: timeStamp.toISOString()
+          }).then(function () {
+            alert(`${sid} is checked: ${status}`);
+          }).catch(function (error) {
+            console.error("Error set student's status:", error);
+          })
+      } else {
+        console.log('no aid')
+        firestore
+          .collection('attendance')
+          .add({
+            cid: cid,
+            uid: uid,
+            date: date,
+          }).then(function () {
+            console.log('create aid')
+            setStudentStatus(cid, uid, sid, status, timeStamp)
+          })
+          .catch(function (error) {
+            console.error("Error adding document:", error);
+          });
+
+      }
+    })
+  }
+
+  function getStatus() {
+    var status = document.getElementsByName('status');
+    var status_value;
+    for (var i = 0; i < status.length; i++) {
+      if (status[i].checked) {
+        status_value = status[i].value;
+      }
+    }
+    return status_value
+  }
+</script>
+
+</html>
